@@ -71,12 +71,30 @@ class SimpleLangListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by SimpleLangParser#EqExpr.
+    def enterEqExpr(self, ctx:SimpleLangParser.EqExprContext):
+        pass
+
+    # Exit a parse tree produced by SimpleLangParser#EqExpr.
+    def exitEqExpr(self, ctx:SimpleLangParser.EqExprContext):
+        pass
+
+
     # Enter a parse tree produced by SimpleLangParser#String.
     def enterString(self, ctx:SimpleLangParser.StringContext):
         pass
 
     # Exit a parse tree produced by SimpleLangParser#String.
     def exitString(self, ctx:SimpleLangParser.StringContext):
+        pass
+
+
+    # Enter a parse tree produced by SimpleLangParser#ModExpr.
+    def enterModExpr(self, ctx:SimpleLangParser.ModExprContext):
+        pass
+
+    # Exit a parse tree produced by SimpleLangParser#ModExpr.
+    def exitModExpr(self, ctx:SimpleLangParser.ModExprContext):
         pass
 
 

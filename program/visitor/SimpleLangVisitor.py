@@ -44,15 +44,23 @@ class SimpleLangVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by SimpleLangParser#EqExpr.
+    def visitEqExpr(self, ctx:SimpleLangParser.EqExprContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by SimpleLangParser#String.
     def visitString(self, ctx:SimpleLangParser.StringContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SimpleLangParser#ModExpr.
+    def visitModExpr(self, ctx:SimpleLangParser.ModExprContext):
         return self.visitChildren(ctx)
 
 
     # Visit a parse tree produced by SimpleLangParser#Int.
     def visitInt(self, ctx:SimpleLangParser.IntContext):
         return self.visitChildren(ctx)
-
-
 
 del SimpleLangParser
